@@ -20,6 +20,3 @@ for items in shop:
 
 print(f"Кол-во товаров: {i}")
 print(f"Общая стоимость: {summ}")
-            
-        
-
