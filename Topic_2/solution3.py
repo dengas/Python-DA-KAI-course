@@ -1,3 +1,5 @@
+#Напишите решения для квадратного уравнения
+
 import sys 
 import math
 
@@ -6,7 +8,6 @@ b = int(sys.argv[2])
 c = int(sys.argv[3])
 
 d = b*b-4*a*c
-# print("d =", d)
 
 if d > 0:
     x1 = (-b - math.sqrt(d))/(2*a)
