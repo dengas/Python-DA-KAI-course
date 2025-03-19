@@ -6,5 +6,12 @@
 # Отсортированный список: [-7, -4, 0, 2, 6, 11, 15]
 
 default_list = [2, 6, -4, 11, 0, 15, -7]
-my_list = []
+my_list = default_list.copy()
+sorted_list = []
 
+for i in default_list:
+    min_number = min(my_list)
+    sorted_list.append(min_number)
+    my_list.remove(min_number)
+    
+print(sorted_list)
