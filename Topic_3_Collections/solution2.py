@@ -8,5 +8,3 @@
 default_list = [2, 6, -4, 11, 0, 15, -7]
 my_list = []
 
-a = 0
-i = 0
