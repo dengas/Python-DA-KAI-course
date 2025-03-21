@@ -61,3 +61,21 @@ df.corr()
 df.to_csv('path_to_file.csv')
 
 
+
+# Группировка данных в Pandas
+#1 Группировка данных по столбцу
+df.groupby(['usertype']).groups
+
+#2 Первые строки из группировки
+df.groupby(['usertype']).first()
+
+#3 Средняя продолжительность поездок
+df.groupby(['usertype' ])[['tripduration' ]].mean()
+
+#4 Группировка по группе признаков
+df.groupby(['usertype', 'start station name'])['tripduration'].mean()
+
+#5 Агрегирование 
+df.groupby(['usertype']).agg({'tripduration':[sum,min],
+                              'starttime' : 'first'})
+
